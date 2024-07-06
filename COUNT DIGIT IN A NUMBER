@@ -1,0 +1,26 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.util.*;
+public class Main
+{
+	static public void main(String[] args) {
+		System.out.println("Hello World");
+		Scanner s = new Scanner (System.in);
+		int n= s.nextInt();
+		System.out.println(countofdigit(n));
+	}
+	static int countofdigit(int n){
+	    int count =0;
+	    while(n>0)
+	    {
+	        n= n/10;
+	        count++;
+	    }
+	    return count;
+	}
+}
